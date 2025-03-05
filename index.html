@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="Content-Security-Policy"
+            content="upgrade-insecure-requests">
+        <title>Alex - Портфолио</title>
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="alternate icon" class="js-site-favicon" type="image/png"
+            href="https://github.githubassets.com/favicons/favicon-dark.png">
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <div class="profile">
+                    <div class="profile-image">
+                        <img
+                            src="https://avatars.githubusercontent.com/u/105116560?v=4"
+                            alt="isikdev" id="profile-img">
+                    </div>
+                    <div class="profile-info">
+                        <h1>isikdev</h1>
+                        <p class="bio">Fullstack Разработчик</p>
+                        <div class="social-links">
+                            <a href="https://github.com/isikdev"
+                                target="_blank"><i class="fab fa-github"></i>
+                                GitHub</a>
+                            <a href="https://t.me/fullstackdeveloper008"
+                                target="_blank"><i class="fab fa-telegram"></i>
+                                Telegram</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <section class="about">
+            <div class="container">
+                <h2>Обо мне</h2>
+                <p>Приветствую вас на моей странице! Я fullstack разработчик,
+                    специализирующийся на создании современных веб-приложений. В
+                    моем GitHub профиле
+                    вы можете найти различные проекты, демонстрирующие мои
+                    навыки и опыт.</p>
+                <p>У меня более 150 репозиториев с различными проектами, начиная
+                    от простых учебных примеров до более сложных приложений.
+                    Основные технологии: HTML/CSS, Vue.js/React.js, PHP,
+                    Laravel, JavaScript/jQuery, Python.</p>
+            </div>
+        </section>
+
+        <section class="repositories">
+            <div class="container">
+                <h2>Мои проекты</h2>
+                <p>Ниже представлен список всех моих проектов на GitHub. Вы
+                    можете нажать на любой из них, чтобы перейти к
+                    репозиторию.</p>
+
+                <div class="search-container">
+                    <input type="text" id="repoSearch"
+                        placeholder="Поиск по репозиториям...">
+                    <select id="yearFilter">
+                        <option value="all">Все годы</option>
+                        <!-- Годы будут добавлены через JavaScript -->
+                    </select>
+                </div>
+
+                <div class="repo-stats">
+                    <div class="stat">
+                        <span id="totalRepos">0</span>
+                        <p>Репозиториев</p>
+                    </div>
+                    <div class="stat">
+                        <span>HTML/CSS</span>
+                        <p>Frontend</p>
+                    </div>
+                    <div class="stat">
+                        <span>Vue/React</span>
+                        <p>Frontend Framework</p>
+                    </div>
+                    <div class="stat">
+                        <span>PHP/Laravel</span>
+                        <p>Backend</p>
+                    </div>
+                    <div class="stat">
+                        <span>JavaScript</span>
+                        <p>Frontend/Backend</p>
+                    </div>
+                    <div class="stat">
+                        <span>Python</span>
+                        <p>Automation</p>
+                    </div>
+                </div>
+
+                <div class="repositories-grid" id="reposContainer">
+                    <!-- Репозитории будут загружены с помощью JavaScript -->
+                    <div class="loader" id="loader">Загрузка
+                        репозиториев...</div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="container">
+                <p>&copy; 2025 isikdev | <a href="https://github.com/isikdev"
+                        target="_blank">GitHub</a></p>
+            </div>
+        </footer>
+
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>
